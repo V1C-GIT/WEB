@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="T&T Paparazzi is a premier South African photography studio providing high-quality event, portrait, and brand photography services.">
+    <title>T&T Paparazzi | Professional Photography Studio</title>
+    <link rel="stylesheet" href="css_assets/style.css">
+    <link rel="stylesheet" href="js_assets/script.js">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <img src="_images/2.5.png" alt="T&T Paparazzi Official Logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="enquiries.html">Enquiries</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div>
+                <h1>Welcome to<br><span>T&T Paparazzi</span> <br>Studio</h1>
+                <p class="par">We are a team of professional photographers and videographers who are passionate about capturing life's most precious moments. Our goal is to provide our clients with high quality, creative, and memorable images and videos that they will cherish for a lifetime.</p>
+            </div>
+
+            <div class="form">
+                <h2>Login Here</h2>
+                <form id="loginForm" onsubmit="return validateLogin(event)">
+                    <input type="email" id="loginEmail" name="email" placeholder="Enter Email Here" required>
+                    <input type="password" id="loginPassword" name="password" placeholder="Enter Password Here" required>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+
+                <p class="link">Don't have an account?<br>
+                <a href="#">Sign up here</a></p>
+                <p class="liw">Log in with</p>
+                <div class="icon">
+                    <a href="#" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#" aria-label="Skype"><ion-icon name="logo-skype"></ion-icon></a>
+                    <a href="#" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#" aria-label="Google"><ion-icon name="logo-google"></ion-icon></a>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

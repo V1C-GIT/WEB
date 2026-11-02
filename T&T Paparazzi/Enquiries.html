@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate estimated photography service costs and send custom enquiries to T&T Paparazzi.">
+    <title>T&T Paparazzi | Service Enquiries</title>
+    <link rel="stylesheet" href="css_assets/style.css">
+    <link rel="stylesheet" href="js_assets/script.js">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <img src="_images/2.5.png" alt="T&T Paparazzi Official Logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="enquiries.html">Enquiries</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="enquiry-container">
+            <h1>Service Enquiry &amp; Estimate</h1>
+            <p class="enquiry-subtext">Select a service category and enter your estimated hours to get an instant cost calculation.</p>
+            
+            <form id="enquiryForm" onsubmit="calculateCost(event)">
+                <div class="form-group">
+                    <label for="serviceCategory">Select Service Category</label>
+                    <select id="serviceCategory" required>
+                        <option value="" disabled selected>-- Choose a Service --</option>
+                        <option value="500">Event Photography (R500 / hr)</option>
+                        <option value="450">Portrait Photography (R450 / hr)</option>
+                        <option value="650">Brand &amp; Business Photography (R650 / hr)</option>
+                        <option value="400">Lifestyle Photography (R400 / hr)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="estimatedHours">Estimated Hours</label>
+                    <input type="number" id="estimatedHours" min="1" max="24" placeholder="e.g. 2" required>
+                </div>
+
+                <button type="submit" class="calc-btn">Calculate Estimated Cost</button>
+            </form>
+
+            <!-- Calculation Output Area -->
+            <div id="costResult" class="cost-result-box" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

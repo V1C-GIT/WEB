@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore T&T Paparazzi photography services including Event, Portrait, Brand, Business, and Lifestyle Photography.">
+    <title>T&T Paparazzi | Our Photography Services</title>
+    <link rel="stylesheet" href="css_assets/style.css">
+    <link rel="stylesheet" href="js_assets/script.js">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <img src="_images/2.5.png" alt="T&T Paparazzi Official Logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="enquiries.html">Enquiries</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div>
+                <h1>Our Services</h1>
+                <p class="par">Explore our tailored photography offerings below. Use the search box to quickly filter services.</p>
+                
+                <!-- Dynamic Search Filter -->
+                <input type="text" id="serviceSearch" onkeyup="filterServices()" placeholder="Search services (e.g., Event, Brand)..." style="width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #ccc;">
+
+                <div id="servicesList">
+                    <div class="service-item">
+                        <h3>1. Event Photography</h3>
+                        <p class="par">We capture the important moments of your events, from birthdays and graduations to parties, corporate events, and celebrations.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>2. Portrait Photography</h3>
+                        <p class="par">Professional portraits that showcase your personality and style. Perfect for personal photos, professional profiles, portfolios, and social media.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>3. Brand & Business Photography</h3>
+                        <p class="par">High-quality images for businesses, brands, and entrepreneurs. We create professional content that helps your brand stand out.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>4. Lifestyle Photography</h3>
+                        <p class="par">Natural and creative photography that captures real moments, personalities, and experiences in a relaxed environment.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-preview">
+                <img src="_images/7.jpg" class="page-img clickable-img" alt="T&T Paparazzi Featured Portfolio Sample" onclick="openLightbox(this.src)">
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="modal" onclick="closeLightbox()" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); text-align:center;">
+        <span style="position:absolute; top:20px; right:35px; color:#fff; font-size:40px; font-weight:bold; cursor:pointer;">&times;</span>
+        <img id="lightboxImg" style="margin:auto; display:block; max-width:80%; max-height:80%; margin-top:50px; border:3px solid #fff;">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
